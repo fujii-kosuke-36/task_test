@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     <section class="text-gray-600 body-font relative">
-                        <form method = "post" action = "">
+                        <form method = "post" action = "{{ route('contacts.store') }}">
                             @csrf
                         <div class="container px-5 mx-auto">
                             <div class="lg:w-1/2 md:w-2/3 mx-auto">
@@ -75,7 +75,6 @@
 
                                 <div class="p-2 w-full">
                                     <div class="relative">
-                                    <label for="url" class="leading-7 text-sm text-gray-600">ホームページ</label>
                                     <input type="checkbox" id="caution" name="caution" >注意事項に同意する
                                     </div>
                                 </div>
