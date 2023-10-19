@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+
 use Illuminate\Support\Facades\Route;
-use App\Controllers\TestController;
-use App\Controllers\ContactFormController;
+use App\HttP\Controllers\TestController;
+use App\HttP\Controllers\ContactFormController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,7 @@ Route::prefix('contacts')->middleware(['auth'])
 ->name('contacts.')
 ->group(function(){
     Route::get('/', 'index')->name('index');
+    Route::get('/create', 'create')->name('create');
 });
 
 
